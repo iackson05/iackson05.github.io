@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Term Report - [Your Name]</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a0d2e 0%, #2d1b4e 50%, #1a0d2e 100%);
+            color: #e8e3f3;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: rgba(45, 27, 78, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(139, 69, 233, 0.3);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            color: #c9a9ff;
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+
+        /* Navigation */
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #e8e3f3;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            background: rgba(201, 169, 255, 0.2);
+            color: #c9a9ff;
+            transform: translateY(-2px);
+        }
+
+        /* Main Content */
+        main {
+            margin-top: 100px;
+            padding: 2rem 0;
+        }
+
+        /* Sections */
+        section {
+            background: rgba(45, 27, 78, 0.4);
+            backdrop-filter: blur(5px);
+            margin: 3rem 0;
+            padding: 3rem 2rem;
+            border-radius: 15px;
+            border: 1px solid rgba(201, 169, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(139, 69, 233, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        section h2 {
+            color: #c9a9ff;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(90deg, #8b45e9, #c9a9ff);
+            border-radius: 2px;
+        }
+
+        section h3 {
+            color: #b794f6;
+            font-size: 1.3rem;
+            margin: 2rem 0 1rem 0;
+        }
+
+        section p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Goal boxes */
+        .goal-box {
+            background: rgba(139, 69, 233, 0.1);
+            border: 1px solid rgba(139, 69, 233, 0.3);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            transition: all 0.3s ease;
+        }
+
+        .goal-box:hover {
+            background: rgba(139, 69, 233, 0.2);
+            border-color: rgba(139, 69, 233, 0.5);
+        }
+
+        .goal-title {
+            color: #c9a9ff;
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+
+            main {
+                margin-top: 140px;
+            }
+
+            section {
+                margin: 2rem 0;
+                padding: 2rem 1rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+            section h2 {
+                font-size: 1.6rem;
+            }
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Add some visual flair */
+        .highlight {
+            background: linear-gradient(90deg, rgba(139, 69, 233, 0.3), rgba(201, 169, 255, 0.3));
+            padding: 0.2rem 0.5rem;
+            border-radius: 5px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Work Term Report - Jackson Smith</h1>
+            <div class="header-content">    
+                <nav>
+                    <ul>
+                        <li><a href="#intro">Introduction</a></li>
+                        <li><a href="#employer">Employer</a></li>
+                        <li><a href="#goals">Goals</a></li>
+                        <li><a href="#job">Job Description</a></li>
+                        <li><a href="#conclusion">Conclusion</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Introduction Section -->
+            <section id="intro">
+                <h2>Introduction</h2>
+                <p>
+                    Hello, my name is Jackson Smith, I am a Computer Science student at the University of Guelph and this is 
+                    my report regarding the first four months of my IT Technician co-op placement at the Toronto Pan Am Sports Centre
+                    (which I will refer to as TPASC throughout this report) in the Summer of 2025. TPASC is a sports facility based
+                    out of Scarborough, ON and is the home of the Scarborough Shooting Stars of the CEBL and hosts many large events such as
+                    the World Aquatics Swimming World Cup.
+                </p>
+                <p>
+                    My role at TPASC provided me with the chance to put many of the skills that I have learned as a student to use, varying from
+                    technical skills like script writing or computer maintnance to soft skills like time management and leadership.
+                </p>
+            </section>
+
+            <!-- About the Employer Section -->
+            <section id="employer">
+                <h2>About TPASC</h2>
+                <h3>Company Overview</h3>
+                <p>
+                    The Toronto Pan Am Sports Centre was built in 2014 to host the Pan Am Games, and has since been used 
+                    as a public athletics centre that that sees over 300,000 customers a year. The facility is owned by
+                    the City of Toronto and the University of Toronto.
+                </p> 
+                <h3>About the facility</h3>
+                <p>
+                    The facility consists of the Field House capable of hosting all of the games for the 
+                    Scarborough Shooting Stars, drop-in sports, and other large events such as the orientation for the 
+                    students attending UofT Scarborough. There is also an Aquatic Centre that has a training pool, competition 
+                    pool, and a dive tank. The competition pool and the dive tank see many large events each year, such as the 
+                    World Aquatics Swimming World Cup that will occur in October 2025. Lastly, there is a fitness centre that has
+                    countless members visit daily.
+                </p>
+                <p>
+                    There are roughly 70 Full-Time and 300 Part-Time employees keeping the facility running. I have met 
+                    so many great people during my time working at the facility and the staff was very welcoming to the arrival
+                    of myself and the other handful of interns that TPASC took on in the summer.
+                </p>
+
+            </section>
+
+            <!-- Goals Section -->
+            <section id="goals">
+                <h2>Learning Goals & Outcomes</h2>
+                <p>
+                    At the beginning of my work term, I established three key learning goals to guide my professional development:
+                </p>
+
+                <div class="goal-box">
+                    <div class="goal-title">Goal 1: Networking</div>
+                    <p><strong>Objective:</strong> I wanted to develop a robust understanding of networking concepts.</p>
+                    <p><strong>Approach:</strong> I approached this goal by getting to know how the networking infrastructure
+                    works at the facility (by both physically discovering the components and by familiarizing myself with our 
+                    Cisco Meraki portal and our LibreNMS server) and trying to test the knowledge that I gained through a project.</p>
+                    <p><strong>Outcome:</strong> I still have a ways to go in terms of reaching this goal, but I was able to put my 
+                    knowledge to the test by creating a network dashboard for my team on our LibreNMS server. This dashboard consists of
+                  a comprehensive network map, device port status updates, server utilizations, and a system log. This project taught me 
+                how network components work together (with the network map), how devices are able to connect to our network, how to ping 
+              devices for their status using SNMP, and some basic networking concepts (like VLANs, subnets, routing, etc.).</p>
+                </div>
+
+                <div class="goal-box">
+                    <div class="goal-title">Goal 2: Leadership</div>
+                    <p><strong>Objective:</strong> I wanted to better my leadership skills</p>
+                    <p><strong>Approach:</strong> I approached this goal by trying my best to take initiative and to approach my work with a strong 
+                      attitude.</p>
+                    <p><strong>Outcome:</strong> To me, leadership isn't completely about leading a group people, but also their work ethic and
+                    attitude. I made sure that in every task on my plate, I approached everything with a high level of intensity and made sure 
+                  that my work was completed to the highest degree. I believe that the best leaders are not just able to lead others,
+                  but also themselves. By approaching my work in such a fashion, the skills that I gained will help me when I am in a 
+                  position to lead others. I need to be able to lead myself before I can be trusted to lead another individual. </p>
+                </div>
+
+                <div class="goal-box">
+                    <div class="goal-title">Goal 3: Personal Organization/Time Management</div>
+                    <p><strong>Objective:</strong> I wanted to develop stronger time management skills and be a more organized person.</p>
+                    <p><strong>Approach:</strong> I made sure to layout and detail each of my tasks and create a timeline/checklist to 
+                    keep track of my progress and make sure that I was on track to finishing my tasks on time.</p>
+                    <p><strong>Outcome:</strong> I think I developed really strong time organization skills by following this process. 
+                    I got all of my work done with ample time to spare, which gave me the opportunity to take on more work than expected
+                    by manager. I think this skill will immediately help me become a better student when it comes to managing my time 
+                  and workload and I should be a more productive and efficient student because of this experience.</p>
+                </div>
+            </section>
+
+            <!-- Job Description Section -->
+            <section id="job">
+                <h2>About the Role</h2>
+                
+                <h3>Responsibilities</h3>
+                <p>
+                    My role at TPASC was titled as IT Technician. The main purpose of my role was to create helpful solutions for 
+                    the rest of the staff. I have created multiple solutions/workflows using Microsoft's Power Apps and SharePoint 
+                    Online. I am also available for IT support when requested. I gained experience in setting up and maintaining 
+                    AV systems. The role is very broad and always keeps me on my toes, but I am very grateful that I am able to 
+                    assist the large staff pool of TPASC to hopefully make some lives easier.
+                </p>
+                <p>
+                    As an IT Technician, each day always brings new tasks and problems to solve. My typical day will consist of working 
+                    on some project, but other things will come up during the day that require my assistance (i.e. computer help/troubleshooting,
+                    being an extra set of hands in another project, etc.). My day at work tends to fly by as I don't feel like I have much downtime.
+                     But I love every second of it and love being able to make an impact on others.
+                </p>
+
+                <h3>Key Projects</h3>
+                <p>
+                    The first project I was assigned at TPASC was to create a calendar in SharePoint Online to hold all of the major 
+                    events occurring at the facility and meeting room bookings. This project allowed me to showcase some of the programming
+                    skills that I have developed as a student to write a script that polls our facility management software, EZFacility,
+                    to get event info, and post it to the SharePoint Calendar. I hosted this calendar on AWS to automate the process
+                    and make it so that all info on the calendar is up to date.
+                    
+                    Network Dashboard, Wayfinding Kiosks, Global Calendar, Automated Workflows/digitization of forms
+                </p>
+
+                <p>
+                    The second project that I worked on is still ongoing and unfinished, but there are plans to have it in place and 
+                    up and running before the end of my tenure. It is an automated workflow to handle assignments of onboarding and offboarding 
+                    tasks for staff. This project taught me how to utilize Power Automate and create useful automations. 
+                </p>
+
+                <p>
+                    Another project that I worked on was to create a network dashboard. This project was assigned to me so that I could 
+                    learn the foundation of a network and how it functions. Here I learned things like how my web search requests get routed 
+                    and how I am able to access the internet, what pieces are needed to create a network, and how to poll devices to get 
+                    their status using SNMP. I discovered the entirety of our network, including the 150+ access points, 15 servers, 2 firewalls
+                    and 15+ switches and how all of these technologies can communicate amongst each other.
+                </p>
+                <p>
+                    Some other projects that I have been involved in include setting up wayfinding kiosks for the facility and tracking the IT
+                    assets within the facility to create a dashboard in Power BI to easily show replacement forecasts and device statuses, digitizing existing forms
+                    using SPFX and JS and using Power Automate to create workflows based on specific criteria in the submission, and I 
+                    serviced and tagged over 50 of our assets (desktops, laptops, etc.).
+                </p>
+
+                <h3>Interesting Aspects</h3>
+                <p>
+                    Some of the most interesting aspects of the job include:
+                </p>
+                <p>
+                    • <span class="highlight">Technology and Tools:</span> Including LibreNMS, Cisco Meraki, SPFX, Office 365, VMware/HyperV, etc.
+                </p>
+                <p>
+                    • <span class="highlight">Team Collaboration:</span> I spent quite some time working among other staff members in other departments
+                    such as managing our TVs and the content they play with the Marketing Team, and working with the Administration Team
+                    to create a useful event calendar.
+                </p>
+                <p>
+                    • <span class="highlight">Learning Opportunities:</span> I have developed lots of Networking and Cybersecurity experience,
+                    as well as how to diagnose computers and assist others with their technical needs.
+                </p>
+                <p>
+                    • <span class="highlight">Atmosphere:</span> Working in a sports facility has been really cool as I get to make an impact in some 
+                    of the major events that we host and it's cool knowing that some of the work I am doing is affecting/helping lots of people.
+            </section>
+
+            <!-- Conclusion Section -->
+            <section id="conclusion">
+                <h2>Conclusion</h2>
+                <p>
+                    I have had an eye-opening semester working at TPASC, it has been really cool working in an office and learning the 
+                    business of a sports facility of their amplitude. I have learned so much on the job about the field of Computer 
+                    Science and I am excited to continue learning during my second work term here. I think the skills I have 
+                    both developed and learned will help me in my career in Computer Science.
+                </p>
+                <p>
+                    I think my work term has made me realize the amount of time that I waste when I am in school. In retrospect,
+                     the workload during an academic semester is not as bad as I realized and if I spend the same amount of time 
+                     on my studies as I do as a co-op student at TPASC, I think I will feel a lot less stressed and have more time to 
+                     work on personal projects and enjoy the best years of my life!
+                </p>
+                
+                <p>
+                  I am really happy to be fortunate enough to have had a co-op placement during this past semester and I will make an effort
+                  to recommend the co-op program to whoever I can!
+                </p>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
